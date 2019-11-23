@@ -10,43 +10,50 @@ body {
 /*-----------ARRIERE PLAN------------------*/
 .background {
 	background-image: url("images/bg_home.png");
-	margin-top: 200px;
-	background-attachment: fixed;
-	background-position: static;
+	margin-top: 100px;
+	background-position: absolute;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .background.active {
 	background-image: url("images/bg_home_nuit.png");
-	margin-top: 200px;
-	background-attachment: fixed;
-	background-position: static;
+	margin-top: 100px;
+	background-position: absolute;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 /*---------IMAGES----------------*/
 img.logo {
+	position: relative;
+	bottom: 0px;
 	opacity: 0;
 	display: block;
     margin: 0 auto;
-	width: 50%;
+	width: 49%;
 }
 img.separation {
+	position: relative;
+	bottom: 150px;
 	opacity: 0;
-	display: block;
-	margin: 0 auto;
-	width: 50%;
-	filter: brightness(0.5);
-}
-img.separation:hover {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
 	filter: brightness(1);
+}
+img.separation:hover {
+	position: relative;
+	bottom: 150px;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	filter: brightness(0.5);
+	cursor: pointer;
 
 }
 img.pres1 {
+	position: relative;
+	top:100px;
 	opacity: 0;
 	display: block;
 	margin: 0 auto;

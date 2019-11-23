@@ -11,7 +11,9 @@ $(document).ready(function() {
 	});
 
 	//Fade-in logos
-	$("img.logo").delay(200).animate({opacity: 1}, 1000);
+	$("img.logo").delay(200).animate({
+		opacity: 1,
+		width: "50%"}, 800);
 	$("img.separation").delay(500).animate({opacity: 1}, 1000);
 
 	//Go to ?? from separation
