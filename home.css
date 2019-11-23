@@ -1,0 +1,69 @@
+/*---------GENERAL-------------*/
+@font-face {
+	font-family: GeorgeCafe;
+	src: url(fonts/LouisGeorgeCafe.ttf);
+}
+body {
+	font-family: GeorgeCafe;
+}
+
+/*-----------ARRIERE PLAN------------------*/
+.background {
+	background-image: url("images/bg_home.png");
+	margin-top: 200px;
+	background-attachment: fixed;
+	background-position: static;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.background.active {
+	background-image: url("images/bg_home_nuit.png");
+	margin-top: 200px;
+	background-attachment: fixed;
+	background-position: static;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*---------IMAGES----------------*/
+img.logo {
+	opacity: 0;
+	display: block;
+    margin: 0 auto;
+	width: 50%;
+}
+img.separation {
+	opacity: 0;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	filter: brightness(0.5);
+}
+img.separation:hover {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	filter: brightness(1);
+
+}
+img.pres1 {
+	opacity: 0;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	background-color: #cfc
+}
+
+/*------------TEXTE-----------------*/
+div.container1 {
+	position: static;
+	display:block;
+	text-align: center;
+}
+p.textePres {
+	display: inline;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	font-size: 60pt;
+}
