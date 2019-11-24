@@ -1,15 +1,13 @@
 /*----------NAVIGATION BARRE----------------*/
 div.navbar {
 	position: fixed;
-	top: 0;
-	left: 200px;
+	top: 0vh;
+	bottom: 95vh;
+	width: 100%;
 	opacity: 1;
 	background-color: #171f2b;
-}div.navbar.active {
-	position: fixed;
-	top: 0;
-	left: 200px;
-	opacity: 1;
+
+} div.navbar.active {
 	background-color: #d6d9f0;
 }
 

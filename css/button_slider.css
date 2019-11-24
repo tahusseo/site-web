@@ -1,10 +1,10 @@
 .switch {
 	position: absolute;
-	top: 2%;
-	left: 2%;
+	top: 5vh;
+	left: 5vh;
 	display: inline-block;
-	width: 3.8%;
-	height: 4%;
+	width: 7vh;
+	height: 4vh;
 }
 .switch input { /*Cache le bouton input utilisateur*/
 	opacity: 0;
@@ -16,16 +16,16 @@
 	cursor: pointer;
 	top: 0; left: 0; right: 0; bottom: 0;
 	background-color: #a1b2cc;
-	border-radius: 35px;
+	border-radius: 20px;
 	transition-duration: 0.4s;
 }
 .slider:before { /*Slider rond*/
 	position: absolute;
 	content: "";
-	height: 80%;
-	width: 45%;
-	left: 6%; bottom: 4px;
-	border-radius: 35px;
+	height: 3.2vh;
+	width: 3.2vh;
+	left: 0.4vh; bottom: 0.45vh;
+	border-radius: 20px;
 	background-color: #d3dff2;
 	-webkit- transition: 0.4s;
 	transition: 0.4s;
@@ -37,26 +37,9 @@ input:checked + .slider { /*Si input=checked > apply ...*/
 }
 
 input:checked + .slider:before {
-	-webkit-transform: translateX(30px);
-	-ms-transform: translateX(30px);
-	transform: translateX(30px);
+	-webkit-transform: translateX(3vh);
+	-ms-transform: translateX(3vh);
+	transform: translateX(3vh);
 	background-color: #5c76a1;
 	transition-duration: 0.4s;
-}
-
-.modeNuitTexte {
-	font-size: 11pt;
-	color: black;
-	text-align: center;
-	position: absolute;
-	top: 30px;
-	content: "Mode nuit désactivé";
-}
-.modeNuitTexte.active {
-	font-size: 11pt;
-	color: #75b2d1;
-	text-align: center;
-	position: absolute;
-	top: 30px;
-	content: "Mode nuit activé";
 }

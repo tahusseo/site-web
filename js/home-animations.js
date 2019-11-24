@@ -19,8 +19,8 @@ $(document).ready(function() {
 	//Go to ?? from separation
 	$("img.separation").click(function (){
 		$("body, html").animate({
-			scrollTop: $("#container1").offset().top -100
-			}, 600);
+			scrollTop: $("#presentation").offset().top -100
+			}, 800);
 	});
 });
 
@@ -28,11 +28,11 @@ $(document).ready(function() {
 $(window).scroll(function() {
 
 	//Fade-out scroll
-	$("img.logo").css("opacity", 1 - $(window).scrollTop() / 500); //Logo_home
+	$("img.logo").css("opacity", 1 - $(window).scrollTop() / 400); //Logo_home
 	$("img.separation").css("opacity", 1 - $(window).scrollTop() / 700); //Separation fleche
 
 	//Fade in-scroll
-	$("img.pres1").css("opacity", 0 + $(window).scrollTop() / 300); //Pres1
+	$("img.presentationImg").css("opacity", 0 + $(window).scrollTop() / 400); //Img Presentation
 
 });
 
