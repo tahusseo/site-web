@@ -1,8 +1,8 @@
 .switch {
-	position: absolute;
-	top: 8vh;
-	right: 5vh;
-	display: inline-block;
+	position: relative;
+	top: 0vh;
+	right: -20vh;
+	display: block;
 	width: 7vh;
 	height: 4vh;
 }

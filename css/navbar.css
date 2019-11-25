@@ -7,13 +7,10 @@
 	width: 100%;
 	opacity: 1;
 	background-color: #ebf5ff;
+	transition-duration: 0.4s;
 }
-.navbar.active {
-	background-color: #171f2b;
-}
-
 /*-------------- HOME ------------*/
-.homeImg {
+img.homeImg {
 	position: absolute;
 	top: 0vh;
 	left: 0vh;
@@ -21,14 +18,14 @@
 	cursor: pointer;
 	transition-duration: 0.2s
 }
-.homeImg:hover {
+img.homeImg:hover {
 	cursor: pointer;
 	background-color: #c1cbd9;
 }
 
 
 /*-------------- SEARCH ------------*/
-.loupeImg {
+img.loupeImg {
 	position: absolute;
 	top: 0vh;
 	right: 5vh;
@@ -36,13 +33,13 @@
 	cursor: pointer;
 	transition-duration: 0.2s
 }
-.loupeImg:hover {
+img.loupeImg:hover {
 	cursor: pointer;
 	background-color: #c1cbd9;
 }
 
 /*-------------- MENU ------------*/
-.menuImg {
+img.menuImg {
 	position: absolute;
 	top: 0vh;
 	right: 0vh;
@@ -50,7 +47,7 @@
 	cursor: pointer;
 	transition-duration: 0.2s
 }
-.menuImg:hover {
+img.menuImg:hover {
 	cursor: pointer;
 	background-color: #c1cbd9;
 }

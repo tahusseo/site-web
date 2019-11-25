@@ -23,13 +23,6 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.background.active {
-	background-image: url("images/bg_home_nuit.png");
-	margin-top: 100px;
-	background-position: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 
 /*--------- IMAGES ACCUEIL ----------------*/
 #homeImages {

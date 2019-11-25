@@ -1,7 +1,7 @@
 .searchPanel.active {
 	position: fixed;
 	visibility: visible;
-	top: 5vh;
+	top: 6vh;
 	left: 20%; right: 20%;
 	height: 8%;
 	opacity: 1;
@@ -26,12 +26,12 @@
 	left: 4vh;
 	height: 7vh;
 	width: 92%;
-    border: none;
-    background: transparent;
+	border: none;
+	background: transparent;
 
-    /*Texte search*/
-    font-size: 5vh;
-    color: #5f6f73;
+	/*Texte search*/
+	font-size: 5vh;
+	color: #5f6f73;
 }
 .decorationSearch {
 	position: absolute;
@@ -39,6 +39,6 @@
 	top: 6.5vh;
 	left: 3%; right: 3%;
 	height: 1%;
-	background-color: #93959c;
+	background-color: #5f6f73;
 	transition-duration: 0.4s;
 }
