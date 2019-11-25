@@ -1,27 +1,35 @@
 $(document).ready(function() {
 
-	//Decoche la checkbox jour/nuit
-	$(".switch input").prop("checked", false);
 
-	//Jour / Nuit (checkbox)
+
+	//--------------------Jour / Nuit (checkbox)------------------
+	$(".switch input").prop("checked", false);	//Decoche la checkbox jour/nuit
+
 	$(".switch input").change(function() { //Check si la checkbox change d'état
 		$(".modeNuitTexte").toggleClass("active", 1000); //Change le texte jour / nuit
 		$(".background").toggleClass("active", 1000); //Change l'arriere plan
 		$(".navbar").toggleClass("active", 1000); //Change la barre de navigation
 	});
 
-	//Fade-in logos
+
+	//-----------------------Fade-in logos---------------------------
 	$("img.logo").delay(200).animate({
 		opacity: 1,
 		width: "50%"}, 800);
 	$("img.separation").delay(500).animate({opacity: 1}, 1000);
 
-	//Go to ?? from separation
-	$("img.separation").click(function (){
+	//-----------------Scroll to anchor------------------------------
+	$("img.homeImg").click(function (){ //from anywhere to accueil
+		$("body, html").animate({
+			scrollTop: $("img.logo").offset().top -100
+		}, 600);
+	});	
+	$("img.separation").click(function (){ //from separation to presentation1
 		$("body, html").animate({
 			scrollTop: $("#presentation").offset().top -100
-			}, 800);
+		}, 800);
 	});
+
 });
 
 
