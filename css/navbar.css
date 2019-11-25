@@ -1,32 +1,56 @@
-/*----------NAVIGATION BARRE----------------*/
-div.navbar {
+/*---------- NAVIGATION BARRE ----------------*/
+.navbar {
 	position: fixed;
+	z-index: 1;
 	top: 0vh;
 	bottom: 95vh;
 	width: 100%;
 	opacity: 1;
+	background-color: #ebf5ff;
+}
+.navbar.active {
 	background-color: #171f2b;
-
-} div.navbar.active {
-	background-color: #d6d9f0;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+/*-------------- HOME ------------*/
+.homeImg {
+	position: absolute;
+	top: 0vh;
+	left: 0vh;
+	max-height: 5vh;
+	cursor: pointer;
+	transition-duration: 0.2s
 }
-li {
-	float: left;
+.homeImg:hover {
+	cursor: pointer;
+	background-color: #c1cbd9;
 }
-li a {
-	display: block;
-	text-align: center;
-	padding: 14px 120px;
-	text-decoration: none;
-	transition-duration: 0.2s;
+
+
+/*-------------- SEARCH ------------*/
+.loupeImg {
+	position: absolute;
+	top: 0vh;
+	right: 5vh;
+	max-height: 5vh;
+	cursor: pointer;
+	transition-duration: 0.2s
 }
-li a:hover {
-	background-color: #8186ab;
+.loupeImg:hover {
+	cursor: pointer;
+	background-color: #c1cbd9;
+}
+
+/*-------------- MENU ------------*/
+.menuImg {
+	position: absolute;
+	top: 0vh;
+	right: 0vh;
+	max-height: 5vh;
+	cursor: pointer;
+	transition-duration: 0.2s
+}
+.menuImg:hover {
+	cursor: pointer;
+	background-color: #c1cbd9;
 }

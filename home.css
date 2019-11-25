@@ -1,4 +1,4 @@
-/*---------GENERAL-------------*/
+/*--------- GENERAL -------------*/
 @font-face {
 	font-family: GeorgeCafe;
 	src: url(fonts/LouisGeorgeCafe.ttf);
@@ -14,7 +14,7 @@ html {
 }
 
 
-/*-----------ARRIERE PLAN------------------*/
+/*----------- ARRIERE PLAN ------------------*/
 .background {
 	background-image: url("images/bg_home.png");
 	margin-top: 100px;
@@ -31,7 +31,7 @@ html {
 	background-size: cover;
 }
 
-/*---------IMAGES ACCUEIL----------------*/
+/*--------- IMAGES ACCUEIL ----------------*/
 #homeImages {
 	position: absolute;
 	top: 10vh;
@@ -58,7 +58,7 @@ img.separation:hover {
 	cursor: pointer;
 }
 
-/*-------------PRESENTATION--------------*/
+/*------------- PRESENTATION --------------*/
 #presentation {
 	position: relative;
 	top: 10vh;
