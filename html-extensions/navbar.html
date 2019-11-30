@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/navbar-animation.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/button_slider.css"> 
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+</head>
+<body>
+
+	<div class="navbar"> <!-- Navigation Bar -->
+		<a href="home.html"><img src="images/home.png" class="homeImg"></a>
+
+		<a href="productPage.html"><img src="images/produits.png" class="produitsImg"></a>
+
+		<img src="images/loupe.png" class="loupeImg">
+		<img src="images/menu.png" class="menuImg">
+
+
+		<div class="searchPanel" > <!-------- Search ----------->
+			<form action="searchPage.html" autocomplete="off">
+
+				<input type="text" value="" class="search" placeholder="Recherche..." name="q"> <!-- Search query -->
+				<span class="decorationSearch"></span>
+				<input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;" tabindex="-1">
+				
+				<div> <!-- Dynamic suggestions -->
+					<ul class="suggest">
+					</ul>
+				</div>
+
+			</form>
+		</div>
+
+
+		<div class="menuPanel"> <!---------- Menu --------->
+			<div class="divSwitch">
+				<p class="switchText">Mode nuit: Désactivé</p>
+				<label class="switch"> <!------ Button Nightmode ----------->
+					<input type="checkbox" class="checkboxClass">
+					<span class="slider"></span>
+					<p class="modeNuitTexte"></p>
+				</label>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

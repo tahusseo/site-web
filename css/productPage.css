@@ -1,0 +1,168 @@
+/*--------- GENERAL -------------*/
+@font-face {
+	font-family: GeorgeCafe;
+	src: url(../fonts/LouisGeorgeCafe.ttf);
+}
+body {
+	font-family: GeorgeCafe;
+}
+
+html {
+	height: 100%;
+}
+
+/*---------- ARRIERE PLAN / ERREUR ----------------*/
+.background {
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.invalidParamVoile {
+	z-index: 1;
+	position: fixed;
+	height: 100vh;
+	top: 5vh;
+	left: 0%; right: 0%;
+	background: linear-gradient(#e8f6ff, #f24235);
+	background-size: cover;
+	outline: 1px solid grey;
+	opacity: 0;
+	display: block;
+}
+img.errorImg {
+	position: relative;
+	display: block;
+	margin: 10vh auto;
+	height: 20vh;
+}
+.errorTxt {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 3vh;
+}
+
+/*-------------- PRODUIT -----------------*/
+.productBackground {
+	position: fixed;
+	top: 5vh;
+	left: 0%; right: 0%;
+	height: 100vh;
+	background: linear-gradient(#ceede7, #b5f5ea);
+}
+
+.productInfo {
+	position: absolute;
+	top: 10vh;
+	left: 5%; right: 5%;
+	bottom: 20vh;
+	background-color: #d4fcff;
+	font-size: 2vh;
+	background: linear-gradient(0.5turn, #d0f0f2, #defdff, #d0f0f2);
+	box-shadow: 1px 1px 10px 3px teal;
+}
+
+/*------------- IMAGES(s) -----------------*/
+img.image {
+	position: absolute;
+	display: block;
+	margin: 5vh 2%;
+	width: 35%;
+}
+
+/*-------------- TEXTE ------------------*/
+#title {
+	position: absolute;
+	font-size: 6vh;
+	color: #1d3536;
+	margin: 2vh 0%;
+	width: 100%;
+	text-align: center;
+}
+.price {
+	position: absolute;
+	font-size: 5vh;
+	top: 0vh;
+	right: 4vh;
+	text-align: center;
+	color: #203c45;
+}
+.description {
+	position: absolute;
+	font-size: 3vh;
+	color: #3b5b5c;
+	margin: 20vh 40%;
+	width: 55%;
+	max-height: 60%;
+	text-align: left;
+	overflow-x: none;
+	overflow-y: auto;
+}
+.addToCart {
+	position: absolute;
+	font-size: 2vh;
+	top: 11vh;
+	right: 0vh;
+	height: 7vh;
+	width: 22vh;
+	text-align: center;
+	background-color: #ccebed;
+		cursor: pointer;
+}
+.addToCart:hover {
+	background-color: #b8d9db;
+	cursor: pointer;
+}
+/*-------------- FEEDBACK ------------------*/
+.productFeedback {
+	position: relative;
+	font-size: 3vh;
+	top: 90vh;
+	left: 5vh;
+	width: 70%;
+	height: 43%;
+	text-align: left;
+	background-color: grey;
+}
+.feedback {
+	position: relative;
+	background-color: red;
+}
+
+
+/*-------------- CHECKOUT ------------------*/
+.checkout {
+	position: fixed;
+	top: 10vh;
+	left: 100%;
+	bottom: 20vh;
+	width: 20%;
+	background-color: #ebf5ff;
+	font-size: 2vh;
+	transition-duration: 0.3s;
+	box-shadow: 1px 1px 3px 1px teal;
+}
+img.cartImg {
+	position: fixed;
+	top: 10vh;
+	right: 0%;
+	width: 9vh;
+	height: 8vh;
+	opacity: 1;
+	background-color: #ebf5ff;
+	box-shadow: -3px 0px 3px 1px teal;
+	transition-duration: 0.3s;
+}
+.cartTxt {
+	position: relative;
+	margin: 1vh auto;
+	font-size: 4vh;
+	text-align: center;
+}
+.itemsTxt {
+	position: relative;
+	margin: 1vh auto;
+	font-size: 3vh;
+	list-style-type: none;
+	background-color: white;
+}

@@ -1,0 +1,69 @@
+/*---------- NAVIGATION BARRE ----------------*/
+.navbar {
+	position: fixed;
+	z-index: 1;
+	top: 0vh;
+	left:0vh;
+	bottom: 95vh;
+	width: 100%;
+	opacity: 0;
+	background-color: #ebf5ff;
+	transition: background-color 0.4s ease;
+}
+
+/*-------------- HOME ------------*/
+img.homeImg {
+	position: absolute;
+	top: 0vh;
+	left: 0vh;
+	max-height: 5vh;
+	cursor: pointer;
+	transition-duration: 0.2s
+}
+img.homeImg:hover {
+	cursor: pointer;
+	background-color: #c1cbd9;
+}
+
+/*------------- CATEGORIES -----------*/
+img.produitsImg {
+	position: absolute;
+	top: 0vh;
+	left: 5vh;
+	max-height: 5vh;
+	cursor: pointer;
+	transition-duration: 0.2s
+}
+img.produitsImg:hover {
+	cursor: pointer;
+	background-color: #c1cbd9;
+}
+
+
+/*-------------- SEARCH ------------*/
+img.loupeImg {
+	position: absolute;
+	top: 0vh;
+	right: 5vh;
+	max-height: 5vh;
+	cursor: pointer;
+	transition-duration: 0.2s
+}
+img.loupeImg:hover {
+	cursor: pointer;
+	background-color: #c1cbd9;
+}
+
+/*-------------- MENU ------------*/
+img.menuImg {
+	position: absolute;
+	top: 0vh;
+	right: 0vh;
+	max-height: 5vh;
+	cursor: pointer;
+	transition-duration: 0.2s
+}
+img.menuImg:hover {
+	cursor: pointer;
+	background-color: #c1cbd9;
+}

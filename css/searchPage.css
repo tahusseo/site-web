@@ -1,0 +1,44 @@
+/*--------- GENERAL -------------*/
+@font-face {
+	font-family: GeorgeCafe;
+	src: url(../fonts/LouisGeorgeCafe.ttf);
+}
+body {
+	font-family: GeorgeCafe;
+}
+
+html {
+	height: 100%;
+}
+
+/*------------ ARRIERE PLAN -----------------*/
+.background {
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*------------ CATEGORIES -----------------*/
+.categories {
+	position: absolute;
+	top: 6vh;
+	left: 0vh; right: 85%;
+	height: 100%;
+	background-color: grey;
+}
+
+/*------------ RESULTATS -----------------*/
+.containerResults {
+	position: absolute;
+	top: 6vh;
+	left: 16%; right: 16%;
+	height: 100%;
+	background-color: grey;
+}
+.results {
+	position: relative;
+	top: 10%;
+	width: 100%;
+	font-size: 5vh;
+	background-color: white;
+}

@@ -1,0 +1,45 @@
+.switch {
+	position: relative;
+	top: 0vh;
+	right: -20vh;
+	display: block;
+	width: 7vh;
+	height: 4vh;
+}
+.switch input { /*Cache le bouton input utilisateur*/
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider { /*Hitbox générale du bouton*/
+	position: absolute;
+	cursor: pointer;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background-color: #a1b2cc;
+	border-radius: 20px;
+	transition-duration: 0.4s;
+}
+.slider:before { /*Slider rond*/
+	position: absolute;
+	content: "";
+	height: 3.2vh;
+	width: 3.2vh;
+	left: 0.4vh; bottom: 0.45vh;
+	border-radius: 20px;
+	background-color: #d3dff2;
+	-webkit- transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider { /*Si input=checked > apply ...*/
+	background-color: #232d3d;
+	transition-duration: 0.4s;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(3vh);
+	-ms-transform: translateX(3vh);
+	transform: translateX(3vh);
+	background-color: #5c76a1;
+	transition-duration: 0.4s;
+}

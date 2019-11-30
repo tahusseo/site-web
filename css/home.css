@@ -1,0 +1,82 @@
+/*--------- GENERAL -------------*/
+@font-face {
+	font-family: GeorgeCafe;
+	src: url(../fonts/LouisGeorgeCafe.ttf);
+}
+body {
+	font-family: GeorgeCafe;
+}
+
+html {
+	height: 100%;
+}
+
+/*----------- ARRIERE PLAN / VOILE ------------------*/
+.voile {
+	z-index: 1;
+	position: fixed;
+	top: 0vh;
+	left: 0vh;
+	right: 0vh;
+	bottom: 0vh;
+	background-color: #3e4b61;
+}
+
+.background {
+	margin-top: 100px;
+	background-position: fixed;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*--------- IMAGES ACCUEIL ----------------*/
+#homeImages {
+	position: absolute;
+	top: 10vh;
+	left: 20vh;
+	right: 20vh;
+	bottom: 20vh;
+}
+img.logo {
+	display: block;
+	margin: 10vh auto;
+	width: 49%;
+	opacity: 0;
+}
+img.separation {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	opacity: 0;
+	filter: brightness(1);
+	cursor: pointer;
+}
+img.separation:hover {
+	filter: brightness(0.5);
+	cursor: pointer;
+}
+
+/*------------- PRESENTATION --------------*/
+#presentation {
+	position: relative;
+	top: 10vh;
+	height: 1200px;
+}
+
+#stickyImg {
+	position: sticky;
+}
+img.presentationImg {
+	max-width: 100%;
+	max-height: 100%;
+	opacity: 0;
+}
+
+p.textePres {
+	display: inline;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	font-size: 60pt;
+}
