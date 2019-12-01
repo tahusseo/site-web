@@ -4,7 +4,7 @@
 
 # Cahier des charges
 
-##### Description du site
+*Description du site*
 > Ahandar est une entreprise fictive de sécurité informatique.
 > Elle propose différentes gammes de produits mises en vente et évaluées par les clients.
 
