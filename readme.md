@@ -9,29 +9,29 @@
 
 ## Fonctionnalités du site
 
-###### Accueil
+#### Accueil
 - [X] Page d'accueil légère et agréable
 - [X] Logo / Marque / Slogan visible
 - [X] Navigation simple et intuitive
-- [] Défiler vers le bas pour un résumé général du site
+- [ ] Défiler vers le bas pour un résumé général du site
 
-###### Barre de navigation
+#### Barre de navigation
 - [X] Naviguer facilement de page en page
 - [X] Retourner à tout moment à l'accueil
 
-###### Recherche et suggestions
+#### Recherche et suggestions
 - [X] Rechercher un produit
 - [X] Suggestions dynamiques
 - [X] Nombre de résultats de recherche
 - [X] Recherche par nom de produits
-- [] Recherche par description de produits
-- [] Catégories
+- [ ] Recherche par description de produits
+- [ ] Catégories
 
-###### Page produit
+#### Page produit
 - [X] Informations du produit (prix, description...)
 - [X] Accès au panier facile
 - [X] Ajouter un article au panier et le supprimer (!bug!)
-- [] Garder les informations du panier entre les pages
+- [ ] Garder les informations du panier entre les pages
 
 - [X] Informations annexes du produit (avis, etoiles)
 - [X] Commentaires d'utilisateurs
