@@ -8,6 +8,8 @@
 > Ahandar est une entreprise fictive de sécurité informatique.
 > Elle propose différentes gammes de produits mises en vente et évaluées par les clients.
 
+
+
 ## Fonctionnalités du site
 
 #### Accueil
