@@ -4,6 +4,7 @@
 
 # Cahier des charges
 
+##### Description du site
 > Ahandar est une entreprise fictive de sécurité informatique.
 > Elle propose différentes gammes de produits mises en vente et évaluées par les clients.
 
@@ -32,12 +33,15 @@
 - [X] Accès au panier facile
 - [X] Ajouter un article au panier et le supprimer (!bug!)
 - [ ] Garder les informations du panier entre les pages
-
+- [ ] Ajouter plusieurs produit au panier
 - [X] Informations annexes du produit (avis, etoiles)
 - [X] Commentaires d'utilisateurs
 - [X] Possibilité d'ajouter des commentaires
 
+#### Page produit
 
+
+## Techniques utilisées (languages, etc)
 Le site est pour sa majeure partie en Javascript / jQuery.
 La recherche et les suggestions dépendent également de jQuery
 L'envoi de commentaires / feedback se fait par PHP dans une base de donnée JSON
