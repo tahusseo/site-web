@@ -38,12 +38,20 @@
 - [ ] Ajouter plusieurs produit au panier
 - [X] Informations annexes du produit (avis, etoiles)
 - [X] Commentaires d'utilisateurs
-- [X] Possibilité d'ajouter des commentaires
+- [X] Ajouter des commentaires
+- [ ] Supprimer son commentaire
 
-#### Page produit
+#### Questionnaire client
+- [ ] Questionnaire de satisfaction après achat (Page produit)
+- [ ] Questionnaire "Laissez-vous guider" (Accueil)
+
+#### Administration du site
+- [X] Base de données lisible (JSON)
+- [X] Modification de la base de données simple
+- [ ]
 
 
 ## Techniques utilisées (languages, etc)
-Le site est pour sa majeure partie en Javascript / jQuery.
-La recherche et les suggestions dépendent également de jQuery
-L'envoi de commentaires / feedback se fait par PHP dans une base de donnée JSON
+Le site est pour sa majeure partie en Javascript / jQuery. 
+La recherche et les suggestions dépendent également de jQuery. 
+L'envoi de commentaires / feedback se fait par PHP dans une base de donnée JSON.
