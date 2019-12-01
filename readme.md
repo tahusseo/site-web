@@ -28,7 +28,8 @@
 - [X] Nombre de résultats de recherche
 - [X] Recherche par nom de produits
 - [ ] Recherche par description de produits
-- [ ] Catégories
+- [ ] Trier par catégories
+- [ ] Options de tri
 
 #### Page produit
 - [X] Informations du produit (prix, description...)
@@ -47,8 +48,8 @@
 
 #### Administration du site
 - [X] Base de données lisible (JSON)
-- [X] Modification de la base de données simple
-- [ ]
+- [X] Ajouter / enlever nouveaux produits simple
+- [X] Modérer les commentaires clients
 
 
 ## Techniques utilisées (languages, etc)
