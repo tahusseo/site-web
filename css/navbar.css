@@ -3,7 +3,7 @@
 	position: fixed;
 	z-index: 1;
 	top: 0vh;
-	left:0vh;
+	left: 0vh;
 	bottom: 95vh;
 	width: 100%;
 	opacity: 0;
@@ -11,8 +11,8 @@
 	transition: background-color 0.4s ease;
 }
 
-/*-------------- HOME ------------*/
-img.homeImg {
+/*-------------- INDEX ------------*/
+img.indexImg {
 	position: absolute;
 	top: 0vh;
 	left: 0vh;
@@ -20,7 +20,7 @@ img.homeImg {
 	cursor: pointer;
 	transition-duration: 0.2s
 }
-img.homeImg:hover {
+img.indexImg:hover {
 	cursor: pointer;
 	background-color: #c1cbd9;
 }

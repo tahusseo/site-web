@@ -1,114 +1,110 @@
-{"products": [
-	{
-		"name": "fjall",
-		"spec": [
-			{
-				"image": "images/products/fjall.png",
-				"price": "69.69",
-				"description": "Fjall est un produit suédois de luxe, idéal pour forniquer sa voisine",
-				"etoiles": "4.3",
-				"evaluation": [
-					{
-						"user": "idfua",
-						"comment": "jfall, parce que j'ai reussi a la bz",
-						"note": "5"
-					}
-				],
-				"category": "globale/antivirus"
-			}]
-	},
-	{
-		"name": "avinco",
-		"spec": [
-			{
-				"image": "images/products/avinco.png",
-				"price": "29.99",
-				"description": "antivirus polyvalent cheap",
-				"etoiles": "4.1",
-				"evaluation": [
-					{
-						"user": "Xx_M04_xX",
-						"comment": "sans plus. encore une fois avinco decoit dans sa personnalisation",
-						"note": "3"
-					}
-				],
-				"category": "globale/antivirus"
-			}]
-	},
-	{
-		"name": "anubis",
-		"spec": [
-			{
-				"image": "images/products/anubis.png",
-				"price": "79.99",
-				"description": "antivirus complet",
-				"etoiles": "4.8",
-				"evaluation": [
-					{
-						"user": "kurt_cobain_78",
-						"comment": " 0 stars smells like shit",
-						"note": "1"
-					},
-					{
-						"user": "user194751",
-						"comment": "Bien. Anubis ne change pas.",
-						"note": "5"
-					}
-				],
-				"category": "globale/antivirus"
-			}]
-	},
-	{
-		"name": "avincoPremium",
-		"spec": [
-			{
-				"image": "images/products/avincoPremium.png",
-				"price": "99.99",
-				"description": "antivirus premium complet",
-				"etoiles": "3.7",
-				"evaluation": [
-					{
-						"user": "la quadrada",
-						"comment": " por quel to me deos besos",
-						"note": "2"
-					},
-					{
-						"user": "guillotin",
-						"comment": "z",
-						"note": "3"
-					}
-				],
-				"category": "globale/antivirus"
-			}]
-	},
-	{
-		"name": "haroft all-in-one",
-		"spec": [
-			{
-				"image": "images/products/haroft.png",
-				"price": "139.99",
-				"description": "package simple complet",
-				"etoiles": "4.8",
-				"evaluation": [
-					{
-
-					}],
-				"category": "globale/all-in-one"
-			}]
-	},
-	{
-		"name": "webextension",
-		"spec": [
-			{
-				"image": "images/products/webextension.png",
-				"price": "9.99",
-				"description": "protection web basic",
-				"evaluation": [
-					{
-						
-					}
-				],
-				"category": "internet/web-extension"
-			}]
-	}
-]}
+{
+    "jfall": [
+        {
+            "image": "images\/products\/fjall.png",
+            "price": "69.69",
+            "description": "Fjall est un produit su\u00e9dois de luxe, id\u00e9al pour forniquer sa voisine",
+            "etoiles": "4.3",
+            "evaluation": [
+                {
+                    "user": "idfua",
+                    "comment": "jfall, parce que j'ai reussi a la bz",
+                    "note": "5\/5"
+                }
+            ],
+            "category": "globale\/antivirus"
+        }
+    ],
+    "avinco": [
+        {
+            "image": "images\/products\/avinco.png",
+            "price": "29.99",
+            "description": "antivirus polyvalent cheap",
+            "etoiles": "4.1",
+            "evaluation": [
+                {
+                    "user": "Xx_M04_xX",
+                    "comment": "sans plus. encore une fois avinco decoit dans sa personnalisation",
+                    "note": "3\/5"
+                },
+                {
+                    "user": "Leifa",
+                    "comment": "ouicarri\u00e8redazdaz",
+                    "note": "baraaraar"
+                },
+                {
+                    "user": "kakashi",
+                    "comment": "",
+                    "note": "2\/5"
+                }
+            ],
+            "category": "globale\/antivirus"
+        }
+    ],
+    "anubis": [
+        {
+            "image": "images\/products\/anubis.png",
+            "price": "79.99",
+            "description": "antivirus complet",
+            "etoiles": "4.8",
+            "evaluation": [
+                {
+                    "user": "kurt_cobain_78",
+                    "comment": " 0 stars smells like shit",
+                    "note": "1\/5"
+                },
+                {
+                    "user": "user194751",
+                    "comment": "Bien. Anubis ne change pas.",
+                    "note": "5\/5"
+                },
+                {
+                    "user": "Oui",
+                    "comment": "J'ai pas mal aim\u00e9",
+                    "note": "5\/5"
+                }
+            ],
+            "category": "globale\/antivirus"
+        }
+    ],
+    "avincoPremium": [
+        {
+            "image": "images\/products\/avincoPremium.png",
+            "price": "99.99",
+            "description": "antivirus premium complet",
+            "etoiles": "3.7",
+            "evaluation": [
+                {
+                    "user": "la quadrada",
+                    "comment": " por quel to me deos besos",
+                    "note": "2\/5"
+                },
+                {
+                    "user": "guillotin",
+                    "comment": "z",
+                    "note": "3\/5"
+                }
+            ],
+            "category": "globale\/antivirus"
+        }
+    ],
+    "haroft all-in-one": [
+        {
+            "image": "images\/products\/haroft.png",
+            "price": "139.99",
+            "description": "package simple complet",
+            "etoiles": "4.8",
+            "evaluation": [],
+            "category": "globale\/all-in-one"
+        }
+    ],
+    "webextension": [
+        {
+            "image": "images\/products\/webextension.png",
+            "price": "9.99",
+            "description": "protection web basic",
+            "evaluation": [],
+            "category": "internet\/web-extension"
+        }
+    ]
+}

@@ -12,25 +12,53 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/import-navbar.js"></script>
 	<script src="js/import-data-suggestions.js"></script>
+	<script src="js/searchPage-animation.js"></script>
 
 </head>
-<body class="background" style="background: linear-gradient(black, white)">
+<body class="background">
 	<div class="pagewrapper">
 
 		<div class="navbarImport"></div>
 
 		<div class="categories"></div>
 
-		<div class="containerResults">
-			<div class="results" id="results">
-				Résultats pour :
-				<!-- GET QUERY from SEARCH --->
+		<div class="resultContainer">
+			
+			<div class="result" id="result"><i>Résultats pour :
+				<!-- GET QUERY from URL --->
 				<script type="text/javascript"> 
 					const urlParams = new URLSearchParams(window.location.search);
 					const myParam = urlParams.get("q");
-					document.getElementById("results").innerHTML += myParam
+					document.getElementById("result").innerHTML += myParam
 				</script>
+			</i></div>
+
+			<!------ ITEM LIST ------>
+			<div class="itemContainer">
+				
+				<div class="item">
+					<img class="itemImg" src="images/products/avinco.png">
+					<div class="itemInfo">
+						<p class="itemName"><strong>webextension</strong></p>
+						<p class="itemDescription">Pas mal pas mal</p>
+						<p class="itemPrice"><i>29.99€</i></p>
+						<p class="itemRating">3/5</p>
+						<img class="ratingImg" src="images/star.png">
+					</div>
+				</div>
+
+				<div class="item">
+					<img class="itemImg" src="images/products/anubis.png">
+					<div class="itemInfo">
+						<p class="itemName"><strong>anubis</strong></p>
+						<p class="itemDescription">Protection internationanle des droits de l'homme et du citoyen</p>
+						<p class="itemPrice">1.99€</p>
+						<p class="itemRating">3/5</p>
+						<img class="ratingImg" src="images/star.png">
+					</div>
+				</div>
 			</div>
+
 		</div>
 
 		<div class="checkout"></div>

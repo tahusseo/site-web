@@ -22,13 +22,13 @@
 		<div class="navbarImport"></div> 
 
 		<div class="productBackground"></div>
-		<div class="invalidParamVoile"><img class="errorImg" src="images/error.png"><p class="errorTxt">Désolé. Ce produit n'existe pas !</p></div> <!-- error screen -->
+
 		
 
 		<!-- INFOS -->
 		<div class="productInfo">
 			
-			<h1 id="title"></h1>
+			<h1 name="title" id="title"></h1>
 			
 			<img class="image">
 
@@ -44,7 +44,20 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ore magna aliqua. Ut enim ad minim veniam, ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est la
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -58,23 +71,42 @@
 				<p class="itemsTxt"></p>
 			</div>
 
+		</div>
+
 
 		<!-- FEEDBACK -->
-		<div class="productFeedback">
+		<div class="feedback">
+			<div class="productFeedback"> <!-- feedback users -->
 			<h2>Commentaires Clients</h2>
-			<div class="feedback">
-				<p class='user'>User: Test</p>
-				<p class='comment'>Comment: Undeux</p>
-				<p class='note'>Note: Trois</p>
 			</div>
-			
-			<form>
-				<input type="text" name="textFeedback">
-				<input type="submit" name="sendFeedback">
+
+			<form action="php/submitFeedback.php" class="sendFeedback"> <!-- send feedback -->
+				<p>Ecrire un commentaire: </p>
+
+				<textarea type="text" class="usernameFeedback" name="username" placeholder="Votre nom/surnom"></textarea>
+				<textarea type="text" class="textFeedback" name="comment" placeholder="Laissez un avis"></textarea>
+				
+				<input type="hidden" class="pNameToPHP" name="pNameToPHP">
+				<button class="buttonFeedback">Envoyer</button>
+
+				<div class="starBox">
+					<p class="starRatingTxt"><i>Laissez une note</i></p>
+					<img class="starImg" id="1" src="images/star.png">
+					<img class="starImg" id="2"src="images/star.png">
+					<img class="starImg" id="3"src="images/star.png">
+					<img class="starImg" id="4"src="images/star.png">
+					<img class="starImg" id="5"src="images/star.png">
+					<input type="text" readonly="readonly" class="feedbackNote" name="feedbackNote">
+				</div>
 			</form>
 		</div>
 
 
+		<!-- ERROR SCREEN -->
+		<div class="invalidParamVoile">
+			<img class="errorImg" src="images/error.png">
+			<p class="errorTxt">Désolé. Ce produit n'existe pas !</p>
+		</div>
 
 	</div>
 </body>

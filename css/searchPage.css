@@ -13,7 +13,8 @@ html {
 
 /*------------ ARRIERE PLAN -----------------*/
 .background {
-	background-attachment: local;
+	background-color: #3e4e5c;
+	background-attachment: local, scroll;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -24,21 +25,104 @@ html {
 	top: 6vh;
 	left: 0vh; right: 85%;
 	height: 100%;
-	background-color: grey;
+	border-radius: 20px;
+	background-color: #475969;
 }
 
 /*------------ RESULTATS -----------------*/
-.containerResults {
+.resultContainer {
 	position: absolute;
 	top: 6vh;
 	left: 16%; right: 16%;
-	height: 100%;
-	background-color: grey;
+	height: 16%;
+	border-radius: 20px;
+	background-color: #475969;
 }
-.results {
+.result {
 	position: relative;
-	top: 10%;
+	top: 2vh;
+	left: 3%;
 	width: 100%;
-	font-size: 5vh;
+	font-size: 2.5vh;
+	color: #bacdde;
+
+	background-color: transparent;
+}
+.itemContainer {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	top: 15vh;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+	border-radius: 20px;
+	overflow: scroll;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: #b3cde3;
+	box-shadow: 1px 1px 10px 3px #b3cde3;
+}
+.item {
+	position: relative;
+	display: inline-block;
+	margin-top: 3vh; margin-left: 3vh;
+	border-radius: 20px;
+	width: 35vh;
+	height: 35vh;
+	background-color: #bad1e6;
+}
+img.itemImg {
+	position: relative;
+	top: 1vh;
+	height: 90%;
+	width: 90%;
+	filter: none;
+}
+.itemInfo {
+	position: absolute;
+	top: -3%;
+	opacity: 0;
+	border-radius: 20px;
+	left: 0%; right: 0%; bottom: 0vh;
+	color: #354654;
+	cursor: pointer;
+}
+.hovered {
 	background-color: white;
+}
+.itemName {
+	font-size: 5vh;
+	color: #26394a;
+}
+.itemDescription {
+	position: relative;
+	top: -4vh;
+	height: 20vh;
+	width: 100vh;
+	display: table-cell;
+    vertical-align: middle;
+	font-size: 2.5vh;
+	overflow: hidden;
+}
+.itemPrice {
+	position: relative;
+	display: inline-block;
+	left: -7vh;
+	top: -5vh;
+	font-size: 2.5vh;
+}
+.itemRating {
+	position: relative;
+	display: inline-block;
+	top: -5.2vh;
+	left: 7vh;
+	font-size: 2vh;
+}
+img.ratingImg {
+	position: relative;
+	display: inline-block;
+	top: -4.7vh;
+	left: 7vh;
+	height: 3vh;
+	width: 3vh:
 }

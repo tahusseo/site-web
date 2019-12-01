@@ -13,9 +13,10 @@ html {
 
 /*---------- ARRIERE PLAN / ERREUR ----------------*/
 .background {
-	background-attachment: local;
+	background-attachment: local, scroll;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: #ceede7;
 }
 .invalidParamVoile {
 	z-index: 1;
@@ -43,13 +44,6 @@ img.errorImg {
 }
 
 /*-------------- PRODUIT -----------------*/
-.productBackground {
-	position: fixed;
-	top: 5vh;
-	left: 0%; right: 0%;
-	height: 100vh;
-	background: linear-gradient(#ceede7, #b5f5ea);
-}
 
 .productInfo {
 	position: absolute;
@@ -107,31 +101,111 @@ img.image {
 	width: 22vh;
 	text-align: center;
 	background-color: #ccebed;
-		cursor: pointer;
+	cursor: pointer;
 }
 .addToCart:hover {
 	background-color: #b8d9db;
 	cursor: pointer;
 }
+
 /*-------------- FEEDBACK ------------------*/
-.productFeedback {
-	position: relative;
+.feedback {
+	position: absolute;
 	font-size: 3vh;
+	color: #325557;
 	top: 90vh;
-	left: 5vh;
-	width: 70%;
+	left: 5vh; right: 5vh;
 	height: 43%;
 	text-align: left;
-	background-color: grey;
 }
-.feedback {
+.feedbackBox {
 	position: relative;
-	background-color: red;
+	border-radius: 10px;
+	margin-bottom: 3vh;
+	background-color: #c1ded8;
+}
+.userFeedback {
+	position: relative;
+	padding: 1vh;
+	padding-left: 2vh;
+}
+.user {
+	font-size: 3vh;
+	color: #32446e;
+}
+.comment {
+	font-size: 2.5vh;
+	color: #20393b;
+}
+.note {
+	color: #30696e;
+	font-size: 2vh;
 }
 
+/*-- send feedback --*/
+.sendFeedback {
+	position: relative;
+	display: block;
+	top: 1vh;
+	margin-top: 20vh;
+	margin-bottom: 30vh;
+}
+.usernameFeedback {
+	border-radius: 10px;
+	padding: 1vh; 
+	width: 60%;
+	height: 3vh;
+	font-family: GeorgeCafe;
+	font-size: 2vh;
+	resize: none;
+}
+.textFeedback {
+	border-radius: 10px;
+	padding: 1vh; 
+	width: 60%;
+	height: 30vh;
+	font-family: GeorgeCafe;
+	font-size: 2vh;
+	resize: none;
+}
+.buttonFeedback {
+	position: absolute;
+	top: 47vh;
+	left: 93vh;
+	width: 20vh;
+	height: 5vh;
+}
+
+/*-- stars rating --*/
+.starRatingTxt {
+	font-size: 2vh;
+}
+.starBox {
+	position: relative;
+	cursor: default;
+	width: 20%;
+}
+.starImg {
+	width: 3vh;
+	height: 3vh;
+	position: relative;
+	transition-duration: 0.2s;
+}
+.starImg:hover, .starImg.hovered {
+	cursor: pointer;
+	filter: invert(1);
+}
+.feedbackNote {
+	position: relative;
+	top: -1vh;
+	background: transparent;
+	border: hidden;
+	width: 2vh;
+}
 
 /*-------------- CHECKOUT ------------------*/
 .checkout {
+	z-index: 1;
 	position: fixed;
 	top: 10vh;
 	left: 100%;

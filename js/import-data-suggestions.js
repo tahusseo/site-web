@@ -2,9 +2,8 @@
 const urlParam = new URLSearchParams(window.location.search);
 const productParam = urlParam.get("q");
 
-let listAll = [];
-let listNames = [];
-
+let data = []; //all product data
+let dataNames = []; //product names only
 
 //------------------------------------------------
 $(document).on("keyup", checkMatch); //suggestions
@@ -13,17 +12,15 @@ $(document).ready(function() {
 	//fade out voile erreur
 	$(".invalidParamVoile").animate({opacity: 1}, 200);
 
-	$.getJSON("json/data-products.json", function(data) {
-		//push all data
-		$.each(data, function(key, value) {
-			listAll.push(key, value);
-		});
-		//push only names
-		$.each(data["products"], function(h) {
-			listNames.push(data["products"][h].name);
-		});
+	//get product infos & names
+	$.getJSON("json/data-products.json", function(i) {
+		//push json into object
+		data.push(i);
+		//convert data to array / easier loop for names checking
+		dataNames = Object.keys(data[0]);
 
-	enableInfos();
+		enableInfos();
+		Setupfeedback();
 	});
 });
 //-----------------------------------------------
@@ -31,41 +28,47 @@ $(document).ready(function() {
 
 //TOGGLE PRODUCTS INFOS
 function enableInfos() {
-		
-		//if (product = url param) > toggle everthing, else > voileErreur
-		for (var i = 0; i <= listAll[1].length-1; i++) {
-			if (productParam === listAll[1][i].name) {
 
-				//productName, productImage...
-				const pName = listAll[1][i].name;
-				const pImage = listAll[1][i].spec[0].image;
-				const pPrice = listAll[1][i].spec[0].price;
-				const pDescription = listAll[1][i].spec[0].description;
+	//if (product = url param) > toggle everthing, else > voileErreur
+	for (var i = 0; i <= dataNames.length-1; i++) {
+		if (productParam === dataNames[i]) {
 
-				//toggle product info
-				$(".invalidParamVoile").hide();
-				$("#title").append(pName);
-				$(".image").attr("src", pImage);
-				$(".price").append(pPrice + "€");
-				$(".description").append("Description: " + pDescription);
+			//productName, productImage...
+			const pName = productParam;
+			const pImage = data[0][pName][0].image;
+			const pPrice = data[0][pName][0].price;
+			const pDescription = data[0][pName][0].description;
 
-				if (listAll[1][i].spec[0].evaluation[0].user != null) { //si aucun commentaire > skip
-					for (var j = 0; j <= listAll[1][i].spec[0].evaluation.length-1; j++) {
+			//toggle product info
+			$(".invalidParamVoile").hide();
+			$("#title").append(pName);
+			$(".image").attr("src", pImage);
+			$(".price").append(pPrice + "€");
+			$(".description").append("Description: " + pDescription);
 
-						//feedbackUser, feedbackComment...
-						const fUser = listAll[1][i].spec[0].evaluation[j].user;
-						const fComment = listAll[1][i].spec[0].evaluation[j].comment;
-						const fNote = listAll[1][i].spec[0].evaluation[j].note;
-						
-						//toggle feedbacks
-						$(".feedback").append(
-							"<p class='user'>User: "+ fUser +"</p>"+
-							"<p class='comment'>Comment: "+ fComment + "</p>"+
-							"<p class='note'>Note: "+ fNote +"</p>");
-					}
+
+			//Feedback
+			const isFeedbackEmpty = !Object.keys(data[0][pName][0].evaluation[0]).length;
+			const pFeedback = data[0][pName][0].evaluation;
+
+			if (isFeedbackEmpty === false) { //si aucun commentaire > skip
+				for (var j = 0; j <= pFeedback.length-1; j++) {
+					
+					//feedbackUser, feedbackComment...
+					const fUser = data[0][pName][0].evaluation[j].user;
+					const fComment = data[0][pName][0].evaluation[j].comment;
+					const fNote = data[0][pName][0].evaluation[j].note;
+					
+					//toggle feedbacks
+					$(".productFeedback").append(
+						"<div class='feedbackBox'><div class='userFeedback'>"+
+						"<p class='user'><strong>"+ fUser +" </strong>:</p>"+ 
+						"<p class='comment'>"+ fComment + "</p>"+
+						"<p class='note'><i>Note: </i><strong>"+ fNote +"</strong></p></div></div>");
 				}
 			}
 		}
+	}
 };
 
 
@@ -81,9 +84,9 @@ function checkMatch() {
 		else {
 			$(".suggest").empty(); //Clear after each keystroke(clean)
 
-			for (const k in listNames) { //For all elements in array (names)
-				if (listNames[k].startsWith(search)) { //If query matches names beginning
-					$(".suggest").append("<li><a href='productPage.html?q=" + listNames[k] + "'>" + listNames[k] + "</a></li>");
+			for (const k in dataNames) { //For all elements in array (names)
+				if (dataNames[k].startsWith(search)) { //If query matches names beginning
+					$(".suggest").append("<li><a href='productPage.html?q=" + dataNames[k] + "'>" + dataNames[k] + "</a></li>");
 				}
 			}
 		}
@@ -91,6 +94,7 @@ function checkMatch() {
 };
 
 
-//SEND FEEDBACK BACK TO SERVER
-function sendFeedback() {
-}
+//SEND productParam TO PHP
+function Setupfeedback() {
+	$(".pNameToPHP").val(productParam);
+};

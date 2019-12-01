@@ -17,9 +17,16 @@ $(document).ready(function() {
 		addItemToCart();
 		displayItems();
 	});
+
+	starsRating();
+
+	
 });
 
 
+
+
+//Add item to cart array
 function addItemToCart() {
 	for (var m = 0; m <= cartItems.length-1; m++) {
 		if (cartItems[m].name === productParam) {
@@ -54,4 +61,59 @@ function displayItems() {
 			$("#"+iName + "Li").remove(); //remove entire article button
 		}
 	}
+}
+
+
+//turn on stars according to hover + rating out of 5
+function starsRating() {
+	$("img.starImg").mouseenter(function() { 
+
+		switch(this.id) {
+			case "1":
+				$("#1").addClass("hovered");
+				$("#2").removeClass("hovered");
+				$("#3").removeClass("hovered");
+				$("#4").removeClass("hovered");
+				$("#5").removeClass("hovered");
+
+				$(".feedbackNote").val("1/5");
+				break;
+			case "2":
+				$("#1").addClass("hovered");
+				$("#2").addClass("hovered");
+				$("#3").removeClass("hovered");
+				$("#4").removeClass("hovered");
+				$("#5").removeClass("hovered");
+
+				$(".feedbackNote").val("2/5");
+				break;
+			case "3":
+				$("#1").addClass("hovered");
+				$("#2").addClass("hovered");
+				$("#3").addClass("hovered");
+				$("#4").removeClass("hovered");
+				$("#5").removeClass("hovered");
+
+				$(".feedbackNote").val("3/5");
+				break;
+			case "4":
+				$("#1").addClass("hovered");
+				$("#2").addClass("hovered");
+				$("#3").addClass("hovered");
+				$("#4").addClass("hovered");
+				$("#5").removeClass("hovered");
+
+				$(".feedbackNote").val("4/5");
+				break;
+			case "5":
+				$("#1").addClass("hovered");
+				$("#2").addClass("hovered");
+				$("#3").addClass("hovered");
+				$("#4").addClass("hovered");
+				$("#5").addClass("hovered");
+
+				$(".feedbackNote").val("5/5");
+				break;
+		}
+	});
 }

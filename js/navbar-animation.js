@@ -40,10 +40,10 @@ $(document).ready(function() {
 		if ($(".checkboxClass").is(':checked')) {
 			$("img.logo").css({"filter": "invert(1)"}); //logo inverted nuit
 			
-			$(".background").css({"background-image": "url(images/bg_home_nuit.png)"}); //background nuit
+			$(".background").css({"background-image": "url(images/bg_index_nuit.png)"}); //background nuit
 			
 			$(".navbar").css({"background-color": "#3e4b61"}, 1000); // navbar nuit
-				$("img.homeImg").css({"filter": "invert(1)"}); //home inverted nuit
+				$("img.indexImg").css({"filter": "invert(1)"}); //index inverted nuit
 				$("img.loupeImg").css({"filter": "invert(1)"}); //loupe inverted nuit
 				$("img.menuImg").css({"filter": "invert(1)"}); //menu inverted nuit
 				
@@ -59,10 +59,10 @@ $(document).ready(function() {
 		} else {
 			$("img.logo").css({"filter": "invert(0)"}); //logo normal jour
 			
-			$(".background").css({"background-image": "url(images/bg_home.png)"}); //background jour
+			$(".background").css({"background-image": "url(images/bg_index.png)"}); //background jour
 			
 			$(".navbar").css({"background-color": "#ebf5ff"}); //navbar jour
-				$("img.homeImg").css({"filter": "invert(0)"}); //home normal jour
+				$("img.indexImg").css({"filter": "invert(0)"}); //index normal jour
 				$("img.loupeImg").css({"filter": "invert(0)"});//loupe normal jour
 				$("img.menuImg").css({"filter": "invert(0)"});//menu normal jour
 				
